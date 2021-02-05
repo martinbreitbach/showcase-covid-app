@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
         percentageRisk = (TextView) findViewById(R.id.textPercentage);
         client = new MqttClient();
         gson = new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ssZ").create();
+
         buttonSendRequest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
